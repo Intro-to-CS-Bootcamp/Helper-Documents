@@ -6,7 +6,7 @@ However, when you need help or work in a software company, others will inevitabl
 This guide is based on the [CS61A Style Guide](https://cs61a.org/articles/composition.html), which is written for Python instead of Ruby. 
 
 ## General
-Limit lines to 80 characters. This is strictly enforced in [CS61B](https://sp18.datastructur.es/materials/guides/style-guide.html).
+Limit lines to 80 characters. Line character limit is strictly enforced in [CS61B](https://sp18.datastructur.es/materials/guides/style-guide.html).
 
 Don't add trailing whitespaces to the end of the file.
 
