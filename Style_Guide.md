@@ -5,6 +5,11 @@ However, when you need help or work in a software company, others will inevitabl
 
 This guide is based on the [CS61A Style Guide](https://cs61a.org/articles/composition.html), which is written for Python instead of Ruby. 
 
+## General
+Limit lines to 80 characters. This is strictly enforced in [CS61B](https://sp18.datastructur.es/materials/guides/style-guide.html).
+
+Don't add trailing whitespaces to the end of the file.
+
 ## Naming
 
 Names should be meaningful. To a computer, variable or method names do not matter. However, humans who read variable names should know what the variable is used for.
@@ -86,9 +91,95 @@ numbers = [1,0,7,5,6]
 numbers = [1, 0, 7, 5, 6]
 ```
 
+Don't add spaces after `(` and `[`, and before `)` and `]`. Add spaces before and after `{}`.
+
+```ruby
+# Bad
+a = ( 1 + 3 ) * 4
+numbers = [ 1, 2, 3 ]
+numbers.each{|e| puts e}
+
+# Good
+a = (1 + 3) * 4
+numbers = [1, 2, 3]
+numbers.each{ |e| puts e }
+```
+
+Don't add space after `!`
+
+```ruby
+# Bad
+! true
+
+# Good
+!true
+```
+
+Add spaces between methods. 
+
+```ruby
+# Good
+
+def plusone(x)
+  return x+1
+end
+
+def plustwo(x)
+  return x+2
+end
+```
+
+Don't use multiple lines of spaces.
+
+```ruby
+# Bad
+
+def plusone(x)
+  return x+1
+end
+
+
+
+def plustwo(x)
+  return x+2
+end
+```
+
+Don't use empty lines around method or class bodies.
+
+```ruby
+# Bad
+class SampleClass
+
+  def plusone(x)
+  
+    return x+1
+
+  end
+
+end
+
+# Good
+class SampleClass
+  def plusone(x)
+    return x+1
+  end
+end
+```
+
+Add underscores to large numbers for better visibility.
+
+```ruby
+# Bad
+a = 1000000000000000
+
+# Good
+a = 1_000_000_000_000_000
+```
+In this case you could also use exponents, i.e. `10**15`
 ## Booleans
 
-Don’t use `and` and `or`. Instead, use `&&` and `||`. Using `and` and `or` can make your program behave in unexpected ways. See this StackOverflow post if you’re interested.
+Don’t use `and` and `or`. Instead, use `&&` and `||`. Using `and` and `or` can make your program behave in unexpected ways. See [this StackOverflow post](https://stackoverflow.com/questions/1426826/difference-between-and-and-in-ruby) if you’re interested.
 
 ```ruby
 # Bad
