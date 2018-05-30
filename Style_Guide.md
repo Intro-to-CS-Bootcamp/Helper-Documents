@@ -199,9 +199,9 @@ Don't compare a boolean variable to True or False. The `!` operator flips the bo
 
 ```ruby
 # Bad
-if a == True:
+if a == true:
   ...
-elsif a == False:
+elsif a == false:
   ...
 
 # Good
