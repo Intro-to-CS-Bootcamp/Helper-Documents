@@ -203,14 +203,14 @@ Don't compare a boolean variable to True or False. The `!` operator flips the bo
 # Bad
 if a == true
   ...
-elsif a == false
+elsif b == false
   ...
 end
 
 # Good
 if a
   ...
-elsif !a
+elsif !b
   ...
 end
 ```
