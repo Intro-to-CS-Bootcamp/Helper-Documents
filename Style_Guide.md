@@ -50,10 +50,10 @@ Use CamelCase for Classes.
 
 ```ruby
 # Bad
-Class many_users
+class many_users
 
 # Good
-Class ManyUsers
+class ManyUsers
 ```
 
 ## Spacing and Indentation
