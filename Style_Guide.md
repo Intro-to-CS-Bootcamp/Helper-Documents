@@ -81,6 +81,8 @@ Add spaces between operators, such as + and – . You can decide if you want to 
 a = 1+5-6*7+8/5
 
 # Good
+a = 1 + 5 - 6 * 7 + 8 / 5
+# Or
 a = 1 + 5 - 6*7 + 8/5
 ```
 
@@ -179,7 +181,7 @@ a = 1000000000000000
 # Good
 a = 1_000_000_000_000_000
 ```
-In this case you could also use exponents, i.e. `10**15`
+In this case you could also use scientific notation, i.e. `10e15`
 ## Booleans
 
 Don’t use `and` and `or`. Instead, use `&&` and `||`. Using `and` and `or` can make your program behave in unexpected ways. See [this StackOverflow post](https://stackoverflow.com/questions/1426826/difference-between-and-and-in-ruby) if you’re interested.
@@ -199,16 +201,18 @@ Don't compare a boolean variable to True or False. The `!` operator flips the bo
 
 ```ruby
 # Bad
-if a == true:
+if a == true
   ...
-elsif a == false:
+elsif a == false
   ...
+end
 
 # Good
-if a:
+if a
   ...
-elsif !a:
-  ... 
+elsif !a
+  ...
+end
 ```
 
 ## Comments
