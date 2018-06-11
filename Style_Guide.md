@@ -107,7 +107,7 @@ numbers.each{|e| puts e}
 # Good
 a = (1 + 3) * 4
 numbers = [1, 2, 3]
-numbers.each{ |e| puts e }
+numbers.each { |e| puts e }
 ```
 
 Don't add space after `!`
